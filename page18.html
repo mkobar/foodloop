@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Filters | FoodLoop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.css" rel="stylesheet">
+  <link href="css/jquery.mobile-1.3.1.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery.mobile-1.3.1.js"></script>
+  <script src="js/codiqa.ext.js"></script>
+  <script src="js/foodloop.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Filters" id="page18">
+      <div data-theme="a" data-role="header">
+          <h3>
+              FoodLoop
+          </h3>
+      </div>
+      <div data-role="content">
+          <h2>
+              Filter Options
+          </h2>
+          <div data-role="fieldcontain" data-controltype="slider">
+              <label for="slider1">
+                  Distance (miles)
+              </label>
+              <input id="slider1" name="slider" value="5" min="0.1" max="20" data-highlight="false" type="range"/>
+          </div>
+          <div id="checkboxes11" data-role="fieldcontain" data-controltype="checkboxes">
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                  <legend>
+                      Price:
+                  </legend>
+                  <input id="checkbox52" name="" type="checkbox"/>
+                  <label for="checkbox52">
+                      $
+                  </label>
+                  <input id="checkbox53" name="" type="checkbox"/>
+                  <label for="checkbox53">
+                      $$
+                  </label>
+                  <input id="checkbox54" name="" type="checkbox"/>
+                  <label for="checkbox54">
+                      $$$
+                  </label>
+                  <input id="checkbox55" name="" type="checkbox"/>
+                  <label for="checkbox55">
+                      $$$$
+                  </label>
+              </fieldset>
+          </div>
+          <div id="checkboxes12" data-role="fieldcontain" data-controltype="checkboxes">
+              <fieldset data-role="controlgroup" data-type="vertical">
+                  <legend>
+                      Cuisine:
+                  </legend>
+                  <input id="checkbox56" name="" type="checkbox"/>
+                  <label for="checkbox56">
+                      Breakfast
+                  </label>
+                  <input id="checkbox57" name="" type="checkbox"/>
+                  <label for="checkbox57">
+                      Mexican
+                  </label>
+                  <input id="checkbox58" name="" type="checkbox"/>
+                  <label for="checkbox58">
+                      Japanese
+                  </label>
+                  <input id="checkbox59" name="" type="checkbox"/>
+                  <label for="checkbox59">
+                      Italian
+                  </label>
+              </fieldset>
+          </div>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="page3.html" data-transition="fade" data-theme="" data-icon="back">
+                      Back
+                  </a>
+              </li>
+              <li>
+                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
+                      About
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>

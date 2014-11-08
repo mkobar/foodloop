@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>like1 | FoodLoop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.css" rel="stylesheet">
+  <link href="css/jquery.mobile-1.3.1.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery.mobile-1.3.1.js"></script>
+  <script src="js/codiqa.ext.js"></script>
+  <script src="js/foodloop.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="like1" id="page13">
+      <div data-theme="a" data-role="header">
+          <h3>
+              FoodLoop
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 298px; height: 200px" src="http://s3-media4.fl.yelpcdn.com/bphoto/O5EoyNWAhblrV7wZ1yEMkg/l.jpg"/>
+          </div>
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      Cupping Room Cafe
+                      <br/>
+                  </b>
+              </p>
+              <p>
+                  American Full Breakfast
+                  <b>
+                      <br/>
+                  </b>
+              </p>
+              <p>
+                  blah, blah, blah
+                  <br/>
+              </p>
+              <p>
+                  0.5 miles to the SW
+                  <br/>
+              </p>
+          </div>
+          <div id="googlemapsjs1" class="google-map" style="width: 288px; height: 150px; margin-left: auto; margin-right: auto">
+          </div>
+          <script type="text/javascript">
+                  window.CodiqaControls && window.CodiqaControls.register('googlemaps', 'googlemapsjs1', {
+              ready: function(control) {
+  
+                  control.options = {
+                      zoom: 14,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
+  
+                  control.el = document.getElementById(control._id);
+                  control.map = new google.maps.Map(control.el, control.options);
+  
+                  var geocoder = new google.maps.Geocoder();
+                  geocoder.geocode({
+                      'address': 'Madison, WI'
+                  }, function(results, status) {
+                      if (status == google.maps.GeocoderStatus.OK) {
+  
+                          var marker = new google.maps.Marker({
+                              map: control.map,
+                              position: results[0].geometry.location
+                          });
+                          control.center = results[0].geometry.location;
+                          control.map.setCenter(control.center);
+                      }
+                  });
+  
+              }
+          });
+          </script>
+          <a data-role="button" href="page14.html">
+              Reserve w OpenTable
+          </a>
+          <a data-role="button" href="page15.html">
+              Order w GrubHub
+          </a>
+          <a data-role="button" href="page16.html">
+              Add to My List
+          </a>
+          <a data-role="button" href="page17.html">
+              Share w Friends
+          </a>
+      </div>
+  </div>
+</body>
+</html>
