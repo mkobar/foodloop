@@ -28,32 +28,21 @@
           </h2>
           <div data-role="fieldcontain" data-controltype="slider">
               <label for="slider1">
-                  Distance (miles)
+                  Distance (miles):
               </label>
               <input id="slider1" name="slider" value="5" min="0.1" max="20" data-highlight="false" type="range"/>
           </div>
-          <div id="checkboxes11" data-role="fieldcontain" data-controltype="checkboxes">
-              <fieldset data-role="controlgroup" data-type="horizontal">
-                  <legend>
-                      Price:
-                  </legend>
-                  <input id="checkbox52" name="" type="checkbox"/>
-                  <label for="checkbox52">
-                      $
-                  </label>
-                  <input id="checkbox53" name="" type="checkbox"/>
-                  <label for="checkbox53">
-                      $$
-                  </label>
-                  <input id="checkbox54" name="" type="checkbox"/>
-                  <label for="checkbox54">
-                      $$$
-                  </label>
-                  <input id="checkbox55" name="" type="checkbox"/>
-                  <label for="checkbox55">
-                      $$$$
-                  </label>
-              </fieldset>
+          <div data-role="fieldcontain" data-controltype="slider">
+              <label for="slider2">
+                  Price $ (less than):
+              </label>
+              <input id="slider2" name="slider" value="30" min="5" max="100" data-highlight="false" type="range"/>
+          </div>
+          <div data-role="fieldcontain" data-controltype="slider">
+              <label for="slider3">
+                  Ratings (minimum stars):
+              </label>
+              <input id="slider3" name="slider" value="5" min="1" max="5" data-highlight="false" type="range"/>
           </div>
           <div id="checkboxes12" data-role="fieldcontain" data-controltype="checkboxes">
               <fieldset data-role="controlgroup" data-type="vertical">
@@ -76,22 +65,15 @@
                   <label for="checkbox59">
                       Italian
                   </label>
+                  <input id="checkbox49" name="" type="checkbox"/>
+                  <label for="checkbox49">
+                      Vegetarian
+                  </label>
               </fieldset>
           </div>
-      </div>
-      <div data-role="tabbar" data-iconpos="top" data-theme="a">
-          <ul>
-              <li>
-                  <a href="page3.html" data-transition="fade" data-theme="" data-icon="back">
-                      Back
-                  </a>
-              </li>
-              <li>
-                  <a href="#" data-transition="fade" data-theme="" data-icon="info">
-                      About
-                  </a>
-              </li>
-          </ul>
+          <a data-role="button" href="page3.html">
+              Save
+          </a>
       </div>
   </div>
 </body>

@@ -34,13 +34,17 @@
                   </b>
               </p>
               <p>
-                  American Full Breakfast
+                  American Full Breakfast Platter
                   <b>
                       <br/>
                   </b>
               </p>
               <p>
-                  blah, blah, blah
+                  $9.95
+                  <br/>
+              </p>
+              <p>
+                  3 1/2 stars
                   <br/>
               </p>
               <p>
@@ -55,7 +59,7 @@
               ready: function(control) {
   
                   control.options = {
-                      zoom: 14,
+                      zoom: 16,
                       mapTypeId: google.maps.MapTypeId.ROADMAP
                   };
   
@@ -64,7 +68,7 @@
   
                   var geocoder = new google.maps.Geocoder();
                   geocoder.geocode({
-                      'address': 'Madison, WI'
+                      'address': '359 West Broadway New York, NY 10013'
                   }, function(results, status) {
                       if (status == google.maps.GeocoderStatus.OK) {
   
